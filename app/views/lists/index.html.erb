@@ -1,9 +1,22 @@
-<h1>Lists#index</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoZ6ZF-yzhGhz2qxsPw7HvMC-yWM8ZCj-Jg&usqp=CAU;);">  
+  <div class="container">
+    <h1>Movie collector</h1>
+    <p>
+      <span id="banner-typed-text"></span>
+    </p>
+  </div>
+</div>
 
-<ul>
-  <% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
-
-<%= link_to 'Create new list', new_list_path %>
+<div class="container">
+  <div class="lists-card-grid">
+    <% @lists.each do |list| %>
+    <div class="card" style="width: 18rem;">
+      <%= image_tag "nature.jpg", alt: ".." %> 
+      <div class="card-body">
+        <h5 class="card-title"><%= link_to list.name, list_path(list) %></h5>
+      </div>
+      </div>
+      <% end %>
+    </div>
+    <%= link_to 'Create movie list', new_list_path, class: "btn btn-outline-secondary" %>
+</div>

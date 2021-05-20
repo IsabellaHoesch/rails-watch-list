@@ -1,0 +1,11 @@
+.lists-card-grid{
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 5px;
+  a {
+    color: rgb(36, 35, 35);
+  }
+}
+
