@@ -1,11 +1,28 @@
 .lists-card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 16px;
+  margin: 15px;
+}
+
+.card-category {
+  padding: 40px;
+  margin: 16px;
+  background-position: center;
+  height: 200px;
   display: flex;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
-  margin: 5px;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(228, 199, 199, 0.2);
   a {
-    color: rgb(36, 35, 35);
+    color: rgb(214, 207, 207);
+    font-weight: bold;
   }
 }
 

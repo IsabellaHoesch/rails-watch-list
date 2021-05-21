@@ -1,8 +1,14 @@
-<div class="container">
-  <%= simple_form_for [@list, @bookmark] do |f| %>
-    <%= f.input :comment %>
-    <%= f.association :movie %>
-    <%= f.association :list %>
-    <%= f.submit %>
-  <% end %>
+<div class="index-page">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">🔖</a>
+  </nav>
+
+  <div class="container">
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie %>
+      <%= f.association :list %>
+      <%= f.submit %>
+    <% end %>
+  </div>
 </div>

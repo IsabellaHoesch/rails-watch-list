@@ -1,16 +1,20 @@
-<h1><%=@list.name %></h1>
-<div>
-  <%@list.bookmarks.each do |bookmark| %>
-    <p>
-    Movie: <%= bookmark.movie.title %>
-    <br>
-    Comment: <%= bookmark.comment %>
-    <br>
-    <%= link_to "🗑️", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }%>
-    </p>
-  <% end %>
+<div class="container">
+  <div class="index-page">
+    <%= render "navbar", list: @list %>
+    <h1><%=@list.name %></h1>
+    <div>
+      <%@list.bookmarks.each do |bookmark| %>
+        <p>
+        Movie: <%= bookmark.movie.title %>
+        <br>
+        Comment: <%= bookmark.comment %>
+        <br>
+        <%= link_to "🗑️", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }%>
+        </p>
+      <% end %>
+    </div>
+
+    <%= link_to 'Back to list overview', lists_path, class: "btn btn-info my-2" %>
+    <%= link_to 'Add a movie', new_list_bookmark_path(@list), class: "btn btn-info my-2" %>
+  </div>
 </div>
-
-<%= link_to 'Back to list overview', lists_path, class: "btn btn-info my-2" %>
-<%= link_to 'Add a movie', new_list_bookmark_path(@list), class: "btn btn-info my-2" %>
-

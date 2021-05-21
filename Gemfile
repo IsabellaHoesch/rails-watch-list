@@ -7,8 +7,10 @@ gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 
-# Gemfile
+# dotenv for security - to not share secret keys
 gem 'dotenv-rails', groups: [:development, :test]
+# cloudinary for images
+gem 'cloudinary', '~> 1.16.0'
 # rest client
 gem "rest-client", "~> 1.6.7"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

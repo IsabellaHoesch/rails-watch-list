@@ -11,3 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.index-page {
+  background-color: rgb(22, 21, 21);
+  height: 100%;
+  color: rgb(202, 174, 174);
+  margin: 15px;
+  padding: 15px;
+}
