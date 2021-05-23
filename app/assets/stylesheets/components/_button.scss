@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(163, 29, 51);
+  a {
+    color: rgb(214, 207, 207);
+  }
+  :hover {
+    color: rgb(163, 29, 51);
+  }
+}
